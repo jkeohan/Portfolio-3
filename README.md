@@ -1,3 +1,5 @@
+Class GoogleSheet: https://docs.google.com/spreadsheets/d/1o-OwySfBf5Sa2JFZjhV_FcFO5X-QSCFwLyp8HXlKXmU/edit#gid=0
+
 ## Project Schedule
 GitHub & GoogleSheet: https://docs.google.com/spreadsheets/d/1mO2gktFiwwhvAyrH7yfoAn9F3tWQVB2KpXIfC5WphJ0/edit#gid=501344264This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
 
@@ -5,7 +7,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Describe project and relevant linksto convey concept/functionality
+Online resume that provides visuals of my current experience with web development.
+Relevant linksto convey concept/functionality
 
 ## Google Sheet
 
@@ -21,17 +24,9 @@ Do not include the actual image and have it render on the page.
 
 ## Time/Priority Matrix 
 
-Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
+List of features - prioritized (axis)
 
-Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
-
-Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
-
-Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
-
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+MVP & PostMVP
 
 #### MVP (examples)
 
