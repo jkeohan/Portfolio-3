@@ -1,33 +1,233 @@
-/* CSS Variables */
+/* CSS Variables https://www.youtube.com/watch?v=moBhzSC455o*/
 
 :root{
-    --primay: #ddd;
-    --dark: #333;
+    --primay: #edf0f1;
+    --dark: #24252A;
     --light: #fff;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
 }
 
-html{
+*{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--dark);
+    margin: 0 ;
+    padding: 0;
+    
 }
 body{
-    background: #ccc;
-    margin: 30px 50px;
-    line-height: 1.4;
+    
+    /* margin: 30px 50px;  */
+    /* line-height: 1.4; */
 }
-.btn{
+/* .btn{
     background: var(--dark);
     color: var(--light);
     padding: 0.6rem 1.3rem;
     text-decoration: none;
     border:0;
+} */
+li, a {
+    font-weight: 500;
+    /* font-size: 16px; */
+    color: var(--primary);
+    text-decoration:none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 10%;
+   
+}
+.logo {
+    margin-right: auto;
+    cursor: pointer;
+    
+    background-color: black;
+   
+}
+ul{
+    list-style: none;
+}
+h3{
+    background-color: black;
+    color: white;
+}
+.top_nav ul li{
+    display:inline-block;
+    padding: 0px 20px;
+}
+.top_nav ul li a{
+    transition: all 0.3s ease 0s;
+}
+.top_nav ul li a:hover{
+    color: blue;
+}
 
+
+.hero_image {
+    /* grid-area: showcase; */
+    /* min-height: 400px; */
+    background: url(img/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 3rem; 
+    width: 100%;
+    max-width: 100%;
+    z-index: 0;
+    /* display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center; */
+    box-shadow: var(--shadow);
 }
 img{
-    /* max-width: 100%; img stay within parent container */
+    max-width: 100%; /*img stay within parent container*/
 }
-.wrapper{
+/* .showcase h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: var(--light);
+}
+.showcase p{
+    font-size: 1.3rem;
+    margin-top: 0;
+    color:  var(--light);
+}
+.top-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+.top-box .price{
+    font-size: 2.5rem;
+}
+.top-box-a{
+    grid-area: top-box-a;
+}
+.top-box-b{
+    grid-area: top-box-b;
+} */
+.wrapper{    /* goes around everything */
+    display: grid;
+    grid-gap: 20px;
+  }
+.project_nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4,1fr);
+}
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        'project_parent aside_nav'
+        'about_me aside_nav'
+        'contact aside_navß';
+}
+.aside_nav ul {
+    grid-area: aside_nav;
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.project_parent{
+    grid-area: project_parent;
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));  /*4 accross will auto respond*/
+}
+.project {
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+.about_me{
+    grid-area: about_me;
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+.contact{
+    grid-area: contact;
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+/* .portfolio{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
+}
+.portfolio img{
+    width: 100%;  /*100% of container*/
+    box-shadow: var(--shadow);
+} */
+footer{
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+
+@media(max-width: 700px){
+    .top-container{
+        grid-template-areas:
+        'showcase showcase'
+        'top-box-a' 'top-box-b';
+    }
+    .showcase h1{
+        font-size: 2.5rem;
+    }
+    .main-nav ul{
+        grid-template-columns: 1fr;  /*stacks menu ontop*/
+    }
+    .info{
+        grid-template-columns: 1fr;
+    }
+    .info .btn{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media(min-width: 768px){
+    header {
+        padding: 7px 10%;
+        font-size: .7rem;
+    }
     
+}
+@media(min-width: 425px){
+    header{
+        padding: 6px 5%;
+        font-size: .8rem;
+    }
+}
+@media(min-width:300px){
+    header{
+        display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 10%;
+    }
 }
