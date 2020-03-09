@@ -1,26 +1,26 @@
 Class GoogleSheet: https://docs.google.com/spreadsheets/d/1o-OwySfBf5Sa2JFZjhV_FcFO5X-QSCFwLyp8HXlKXmU/edit#gid=0
 
 ## Project Schedule
-GitHub & GoogleSheet: https://docs.google.com/spreadsheets/d/1mO2gktFiwwhvAyrH7yfoAn9F3tWQVB2KpXIfC5WphJ0/edit#gid=501344264This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
+GitHub
 
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+Time Sheet: https://docs.google.com/spreadsheets/d/1mO2gktFiwwhvAyrH7yfoAn9F3tWQVB2KpXIfC5WphJ0/edit#gid=501344264
 
 ## Project Description
 
 Online resume that provides visuals of my current experience with web development.
-Relevant linksto convey concept/functionality
 
 ## Google Sheet
 
-https://docs.google.com/spreadsheets/d/1mO2gktFiwwhvAyrH7yfoAn9F3tWQVB2KpXIfC5WphJ0/edit#gid=501344264
+
+
+List of Projects: https://docs.google.com/spreadsheets/d/1wVjdMce-oO0pND1evxCbDKfE0wYQf-CfBov_3DmnMuQ/edit#gid=0
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. 
-Do not include the actual image and have it render on the page.  
+Upload images of wireframe:
+https://res.cloudinary.com/de2i4dwok/image/upload/v1583762889/Project%201/IMG_9056_idv4qv.jpg
 
-[https://www.figma.com/](https://www.figma.com/)
-[https://mockflow.com/app/#Wireframe](https://mockflow.com/app/#Wireframe)
+This is a drawing of the MVP. 
 
 ## Time/Priority Matrix 
 
