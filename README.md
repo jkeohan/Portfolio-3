@@ -67,7 +67,7 @@ Google Spreadsheet: https://docs.google.com/spreadsheets/d/1mO2gktFiwwhvAyrH7yfo
 
 ## Additional Libraries
 *https://code.jquery.com/jquery-3.4.1.min.js"
-*https://icons8.com/icons/
+*https://thenounproject.com/
  
 
 ## Code Snippet
