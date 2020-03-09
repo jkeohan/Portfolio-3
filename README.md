@@ -66,8 +66,9 @@ Drawing of Mobile & Tablet: https://res.cloudinary.com/de2i4dwok/image/upload/v1
 Google Spreadsheet: https://docs.google.com/spreadsheets/d/1mO2gktFiwwhvAyrH7yfoAn9F3tWQVB2KpXIfC5WphJ0/edit#gid=501344264
 
 ## Additional Libraries
-*https://code.jquery.com/jquery-3.4.1.min.js"
-*https://thenounproject.com/
+| *https://code.jquery.com/jquery-3.4.1.min.js"
+| *https://thenounproject.com/
+| Copyright: https://res.cloudinary.com/de2i4dwok/image/upload/v1583536372/Project%201/821011872_780x439_q0hxxi.jpg
  
 
 ## Code Snippet
