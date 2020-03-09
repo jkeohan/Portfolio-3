@@ -1,5 +1,3 @@
-Class GoogleSheet: https://docs.google.com/spreadsheets/d/1o-OwySfBf5Sa2JFZjhV_FcFO5X-QSCFwLyp8HXlKXmU/edit#gid=0
-
 ## Project Schedule
 GitHub: https://github.com/GracieEveritt/Portfolio
 
@@ -15,7 +13,8 @@ List of Projects: https://docs.google.com/spreadsheets/d/1wVjdMce-oO0pND1evxCbDK
 
 ## Wireframes
 
-Drawing of MVP: https://res.cloudinary.com/de2i4dwok/image/upload/v1583762889/Project%201/IMG_9056_idv4qv.jpg
+Drawing of MVP Desktop: https://res.cloudinary.com/de2i4dwok/image/upload/v1583762889/Project%201/IMG_9056_idv4qv.jpg
+Drawing of Mobile & Tablet: https://res.cloudinary.com/de2i4dwok/image/upload/v1583780765/Project%201/IMG_9065_j4lg9e.jpg
 
 ## Time/Priority Matrix 
 
