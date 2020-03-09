@@ -1,8 +1,6 @@
 ## Project Schedule
 GitHub: https://github.com/GracieEveritt/Portfolio
 
-Time Sheet: https://docs.google.com/spreadsheets/d/1mO2gktFiwwhvAyrH7yfoAn9F3tWQVB2KpXIfC5WphJ0/edit#gid=501344264
-
 ## Project Description
 
 Online resume that provides visuals of my current experience with web development.
@@ -65,9 +63,12 @@ Drawing of Mobile & Tablet: https://res.cloudinary.com/de2i4dwok/image/upload/v1
 |				
 |TOTAL |	| 31	| 6.5 |	6.25 |
 
-See Google Spreadsheet: https://docs.google.com/spreadsheets/d/1mO2gktFiwwhvAyrH7yfoAn9F3tWQVB2KpXIfC5WphJ0/edit#gid=501344264
+Google Spreadsheet: https://docs.google.com/spreadsheets/d/1mO2gktFiwwhvAyrH7yfoAn9F3tWQVB2KpXIfC5WphJ0/edit#gid=501344264
 
 ## Additional Libraries
+*https://code.jquery.com/jquery-3.4.1.min.js"
+*https://icons8.com/icons/
+ 
 
 ## Code Snippet
 
