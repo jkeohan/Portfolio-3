@@ -18,15 +18,28 @@ Drawing of Mobile & Tablet: https://res.cloudinary.com/de2i4dwok/image/upload/v1
 
 ## Time/Priority Matrix 
 
-See Projects
+|Deliverable	| Status	| Min.Spent |
+| --- | :---: |  :---: | 
+| Research ideas & GIF fun	| Complete 	| 30 |
+| Wireframes / Priority Matrix / Timeline	| Complete	| 90 |
+| HTML built	| Complete | 30 |
+| Compile List of Projects	| Complete | 45 |
+| Implement Grid and Flexbox to Structure	 |  |  |	
+| Implement Tablet & Desktop Versions	 |  |  |		
+| Implement basic CSS Design |  |  |		
+| Create Contact Form	 |  |  |
+| Create About Me	 |  |  |		
+| Implement Project Navigation with Jquery filter	 |  |  |		
+| Create Hide Header |  |  |		
+| Create Hide Footer	 |  |  |	
+| Create page pop	 |  |  |		
+| Full page zoom & opacity to project cards	 |  |  |		
+| Side-bar navigation with icon images	 |  |  |		
+| Hero image animation	 |  |  | 		
+| Hero image GIF animation	 |  |  |		
+| Finalize GitHub Documentation  |  |  |		
 
 ## Functional Components
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
-
 
 | Component | Priority	| Estim Hrs |	Inves. Hrs	| Actual Hrs|
 | --- | :---: |  :---: | :---: | :---: |
