@@ -69,6 +69,7 @@ Google Spreadsheet: https://docs.google.com/spreadsheets/d/1mO2gktFiwwhvAyrH7yfo
 | *https://code.jquery.com/jquery-3.4.1.min.js"
 | *https://thenounproject.com/
 | Copyright: https://res.cloudinary.com/de2i4dwok/image/upload/v1583536372/Project%201/821011872_780x439_q0hxxi.jpg
+<script src="https://kit.fontawesome.com/1ec028bfe5.js" crossorigin="anonymous"></script>
  
 
 ## Code Snippet
