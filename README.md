@@ -1,3 +1,6 @@
+##Live GitHub Page:
+https://gracieeveritt.github.io/Portfolio/
+
 ## Project Schedule
 GitHub: https://github.com/GracieEveritt/Portfolio
 
