@@ -1,144 +1,103 @@
-/* CSS Variables https://www.youtube.com/watch?v=moBhzSC455o*/
-
-:root{
-    --primay: #edf0f1;
-    --dark: #24252A;
-    --light: #fff;
-    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
-}
-
 *{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--dark);
     margin: 0 ;
     padding: 0;
-    
-}
-body{
-    
-    /* margin: 30px 50px;  */
-    /* line-height: 1.4; */
-}
-/* .btn{
-    background: var(--dark);
-    color: var(--light);
-    padding: 0.6rem 1.3rem;
-    text-decoration: none;
-    border:0;
-} */
-li, a {
-    font-weight: 500;
-    /* font-size: 16px; */
-    color: var(--primary);
-    text-decoration:none;
-}
-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 15px 10%;
-   
-}
-.logo {
-    margin-right: auto;
-    cursor: pointer;
-    
-    background-color: black;
-   
-}
-ul{
-    list-style: none;
-}
-h3{
-    background-color: black;
+    background: black;
     color: white;
 }
-.top_nav ul li{
-    display:inline-block;
-    padding: 0px 20px;
-}
-.top_nav ul li a{
-    transition: all 0.3s ease 0s;
-}
-.top_nav ul li a:hover{
-    color: blue;
-}
-
-
-.hero_image {
-    /* grid-area: showcase; */
-    /* min-height: 400px; */
-    background: url(img/showcase.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 3rem; 
-    width: 100%;
-    max-width: 100%;
-    z-index: 0;
-    /* display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center; */
-    box-shadow: var(--shadow);
-}
-img{
-    max-width: 100%; /*img stay within parent container*/
-}
-/* .showcase h1{
-    font-size: 4rem;
-    margin-bottom: 0;
-    color: var(--light);
-}
-.showcase p{
-    font-size: 1.3rem;
-    margin-top: 0;
-    color:  var(--light);
-}
-.top-box {
-    background: var(--primary);
-    display: grid;
+header, ul, footer{
+    display: flex;
     align-items: center;
-    justify-items: center;
-    box-shadow: var(--shadow);
-    padding: 1.5rem;
+    /* justify-content: space-around; */
 }
-.top-box .price{
-    font-size: 2.5rem;
+header, footer{
+    justify-content: flex-end;
+    background-color: black;
+    padding: 1.0% 5%;
+    
+    /* width: 100%; */
 }
-.top-box-a{
-    grid-area: top-box-a;
+
+.logo{
+    color: white;
+    background-color: black;
+    margin-right: auto;
+    padding-top: 2px;
+    /* width: 100%; */
 }
-.top-box-b{
-    grid-area: top-box-b;
+i{
+    font-size: 1.1rem;
+    
+}
+nav{
+    background: black;
+    
+}
+li{
+    padding: 0 5px;
+}
+li, a{
+   list-style-type: none;
+   text-decoration: none;
+   color: white;
+   font-size: .7rem;
+   transition: all 0.3s ease 0s;
+}
+a:hover{
+    color: lightblue;
+}
+footer{
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+p{
+    background:black;
+    color: white;
+    font-size: .09rem;
+    text-align: left;
+    flex-basis: 100%
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+    filter: grayscale(1);
+    background: black;
+
+}
+.hero_image{
+    background: black;
+}
+/* .project_nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4,1fr);
 } */
 .wrapper{    /* goes around everything */
     display: grid;
     grid-gap: 20px;
+    grid-gap: 10px;
+    grid-template-areas:
+        'project_parent aside'
+        'about_me aside'
+        'contact aside';
+    grid-template-columns: 9fr 1fr;
   }
-.project_nav ul {
-    display: grid;
-    grid-gap: 20px;
-    padding: 0;
-    list-style: none;
-    grid-template-columns: repeat(4,1fr);
-}
-.container {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-areas: 
-        'project_parent aside_nav'
-        'about_me aside_nav'
-        'contact aside_navß';
+
+.aside{
+    grid-area: aside;
 }
 .aside_nav ul {
     grid-area: aside_nav;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
     grid-gap: 20px;
     padding: 0;
     list-style: none;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr); */
 }
 
 .project_parent{
@@ -155,79 +114,174 @@ img{
 }
 .about_me{
     grid-area: about_me;
-    background: var(--primary);
-    box-shadow: var(--shadow);
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 3rem;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 10px;
+    padding-bottom: 25px;
 }
-.contact{
-    grid-area: contact;
-    background: var(--primary);
-    box-shadow: var(--shadow);
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 3rem;
+h3{
+    padding: 0 0 3px 0;
 }
-/* .portfolio{
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+p{
+    font-size: .75rem;
+}
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 6px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 6px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: white;
+    color: gray;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding-left: 10px;
+  }
+ textarea {
+      height:50px;
+  }
+.contact_h3{
+    padding: 3px 0 0 5px;
+}
 
-}
-.portfolio img{
-    width: 100%;  /*100% of container*/
-    box-shadow: var(--shadow);
-} */
-footer{
-    margin-top: 2rem;
-    background: var(--dark);
-    color: var(--light);
-    text-align: center;
-    padding: 1rem;
-}
-
-@media(max-width: 700px){
-    .top-container{
+@media(min-width: 768px){
+    i{
+        font-size: 1.7rem;
+    }
+    li, a {
+        font-size: 1.0rem;
+     }
+     .contact,.about_me{
+        margin-left: 30px;
+    }
+    .about_me{
+        height: 300px;
+    }
+    h3{
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+    p{
+        font-size: 1rem;
+    }
+     .contact{
+         margin-top: 50px;
+         margin-bottom: 50px;
+     }
+     .contact_h3{
+        padding: 3px 0 10px 5px;
+        font-size: 2rem;
+    }
+     .contact form{
+        display:grid;
+        grid-gap: 10px;
         grid-template-areas:
-        'showcase showcase'
-        'top-box-a' 'top-box-b';
+        'test message';
+     }
+    #name, #email, #phone {
+        height: 30px;
     }
-    .showcase h1{
-        font-size: 2.5rem;
-    }
-    .main-nav ul{
-        grid-template-columns: 1fr;  /*stacks menu ontop*/
-    }
-    .info{
-        grid-template-columns: 1fr;
-    }
-    .info .btn{
-        display: block;
-        text-align: center;
+    .test{
+        grid-area: test;
+        
+        /* display: flex;
+        flex-direction: column; */
+     }
+     #message{
+         grid-area: message;
+         height: 104px;
+     }
+     #phone{
+         float: bottom;
+         margin-top: 80px;
+     }
+     #email{
+         margin-top: 43px;
+     }
+
+     #submit{
+        width: 90px;
+
+        margin-top: -5px;
+     }
+}
+@media(min-width: 1024px){
+    body{
+        max-width: 1024px;
         margin: auto;
     }
-}
-@media(min-width: 768px){
-    header {
-        padding: 7px 10%;
-        font-size: .7rem;
+    img{
+        width: 100%;
+        height: 450px;
     }
-    
-}
-@media(min-width: 425px){
-    header{
-        padding: 6px 5%;
-        font-size: .8rem;
+    i{
+        font-size: 2rem;
+    }
+    li, a {
+        font-size: 1.25rem;
+     }
+     p {
+         font-size: 1.2rem;
+     }
+     .contact,.about_me{
+         margin-left: 50px;
+     }
+     .about_me{
+        height: 410px;
+    }
+    h3{
+        font-size: 2.5rem;
+        padding-bottom: 10px;
+    }
+     .contact{
+        margin-top: 53px;
+        margin-bottom: 50px;
+    }
+    .contact_h3{
+       padding: 3px 0 10px 5px;
+       font-size: 2.5rem;
+   }
+     #name, #email, #phone {
+        height: 40px;
+    }
+    #message{
+       
+        height: 137px;
+    }
+    #phone{
+        
+        margin-top: 103px;
+    }
+    #email{
+        margin-top: 55px;
+    }
+
+    #submit{
+       width: 110px;
+        margin-left: 2px;
+       margin-top: 3px;
     }
 }
-@media(min-width:300px){
-    header{
-        display: inline-flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 15px 10%;
-    }
-}
+

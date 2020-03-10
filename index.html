@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gracie Everitt Engineer</title>
     <link rel="stylesheet" href = "style.css" type ="text/css">
+    <script src="https://kit.fontawesome.com/1ec028bfe5.js" crossorigin="anonymous"></script>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -12,7 +13,9 @@
 </head>
 <header>
     <div class="logo">
-        <h3>LOGO</h3>
+        <a href="#">
+           <i class="fab fa-grav"></i>
+        </a>       
     </div>
     <nav class="top_nav">
         <ul>
@@ -25,9 +28,10 @@
 </header>
 <body>
    
-    <section >
+    <section class="hero_image">
         
-        <img class="hero_image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1583536372/Project%201/821011872_780x439_q0hxxi.jpg" alt="Telluride">
+        <img  
+        src="https://res.cloudinary.com/de2i4dwok/image/upload/v1583536372/Project%201/821011872_780x439_q0hxxi.jpg" alt="Telluride">
     </section>
     <section>
         <nav class="project_nav">
@@ -50,26 +54,49 @@
             <h5>Project 2</h5>
         </div>
     </section>
-    <section>
-        <nav class="container aside_nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+    <section class="container aside">
+        <nav class="aside_nav">
+            <ul class="aside_ul">
+                <li><a href="#"><i class="fas fa-home"></i></a> </li>
+                <li><a href="#"><i class="fas fa-project-diagram"></i></a> </li>
+                <li><a href="#"><i class="far fa-user-circle"></i></a> </li>
+                <li><a href="#"><i class="far fa-envelope"></i></a> </li>
+
             </ul>
         </nav>
     </section>
     <section class = "container about_me">
-        <p>About Me Section</p>
+        <h3 class="about_me_h3">About Me</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, voluptate? Consequatur distinctio ut adipisci aperiam hic excepturi qui voluptatibus, pariatur voluptatum labore debitis architecto at veniam nisi quod. Quaerat, perspiciatis!</p>
     </section>
-    <section class="container contact">Contact Me Section</section>
+    <section class="container contact">
+        <h3 class=contact_h3>Contact Me</h3>
+        <form action="action_page.php">
+
+            <!-- <label for="name">Name</label> -->
+            <input class="test" type="text" id="name" name="name" placeholder="Your name..">
+        
+            <!-- <label for="email">Email</label> -->
+            <input class="test" type="text" id="email" name="email" placeholder="Your email..">
+        
+            <!-- <label for="phone">Phone</label> -->
+            <input class="test" type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+            <!-- <label for="message">Message</label> -->
+            <textarea id="message" name="message" placeholder="Your message.."></textarea>
+        
+            <input type="submit" id="submit" value="Submit">
+        
+          </form>
+    </section>
     </div>
 <footer>
-    <div class="logo">
-        <h3>LOGO</h3>
+    <div class="footer_topline logo">
+        <a href="#">
+           <i class="fab fa-grav"></i>
+        </a>       
     </div>
-    <nav class="bottom_nav"> 
+    <nav class="footer_topline bottom_nav">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Projects</a></li>
@@ -77,8 +104,9 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    <p>Name &copy; 2020</p>
+    <p class="footer_bottomline">&copy; 2020</p>
 </footer>
+
     <script src = "java.js"></script>
     
 </body>
