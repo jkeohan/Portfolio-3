@@ -58,7 +58,7 @@ p{
     flex-basis: 100%
 }
 
-img{
+.hero{
     height: auto;
     max-width: 100%;
     filter: grayscale(1);
@@ -99,19 +99,59 @@ img{
     list-style: none;
     grid-template-columns: repeat(4,1fr); */
 }
+/* PROJECT NAVIGATION */
+.project_nav ul{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    
+}
+.li_jQuery {
+    background-color: rgba(150,192,190,0.37);
+    padding: 0;
+    border-radius: 5px;
+    /* border: rgba(207,246,246,0.7); */
+    /* color: white; */
+}
+.a_jQuery{
+    background-color:rgba(150,192,190,0.37);
+    padding: 0 5px 0 5px;
+    margin-bottom: -1px;
+}
+.li_flexbox, .a_flexbox{
+    background-color:rgba(194,198,78,0.36);
+}
+.project_nav ul li {
+    border-radius: 5px;
+}
+/* PROJECT CONTAINERS */
 
 .project_parent{
     grid-area: project_parent;
-    display:grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));  /*4 accross will auto respond*/
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(150,192,190,0.37);
+    padding-bottom: 10px;
+    
 }
 .project {
-    background: var(--primary);
     text-align: center;
-    padding: 1.5rem 2rem;
-    box-shadow: var(--shadow);
+    margin: 10px 0 0 10px;
+    background-color:rgba(150,192,190,0.37);
 }
+.project_img{
+    height: 115px;
+    width: 115px;
+    padding: 0;
+}
+h6{
+    background-color:rgba(150,192,190,0.37);
+}
+
+/* ABOUT ME */
 .about_me{
     grid-area: about_me;
     border: 1px solid #ccc; 
@@ -126,6 +166,8 @@ h3{
 p{
     font-size: .75rem;
 }
+
+/* CONTACT FORM */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 6px; /* Some padding */ 

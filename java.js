@@ -1,24 +1,111 @@
+//Data Source -- GoogleSheet
+
 let source = "https://spreadsheets.google.com/feeds/list/1wVjdMce-oO0pND1evxCbDKfE0wYQf-CfBov_3DmnMuQ/od6/public/values?alt=json";
 
+//"Fetch" function returns an Array "projects" of objects
 fetch(source)
   .then(response => response.json())
   .then(data => {
-      console.log('data',data)
+      
       let projects = data.feed.entry.map(project =>{
-        console.log('project',project.gsx$title.$t)
+      
         return {
           title: project.gsx$title.$t,
           description: project.gsx$description.$t,
           image: project.gsx$image.$t,
-          url: project.gsx$url.$t
+          url: project.gsx$url.$t,
+          category: project.gsx$category.$t,
+          recent: project.gsx$recent.$t
         }
   })
       console.log('projects',projects)
       app(projects)
 })
-
-function app(projects){
-  console.log('app-projects',projects)
-  //my code goes here -- how to use this data from my project
+// Flexbox_Grid
+// HTML_CSS
+// jQuery
+const $project_parent = $('section.project_parent')
+function loadCategory(filteredArray){
+   
+    for (i=0; i<filteredArray.length; i++){
+        let $div = $('<div>').addClass('project')
+        $project_parent.append($div)
+        // let $h5 = $('<h5>').html(filteredArray[i].description).addClass('project_h5')
+        // $div.append($h5)
+        let $img = $('<img>').attr('src',filteredArray[i].image).attr('alt',"project image").attr('title',`${filteredArray[i].description} example`).addClass('project_img')
+        $div.append($img)
+        let $h6 = $('<h6>').html(filteredArray[i].title).addClass('project_h6')
+        $div.append($h6)
+    }
+    return
+}
+function clearCategory(){
+   
+    
+        
+        
+        // let $h5 = $('<h5>').html(filteredArray[i].description).addClass('project_h5')
+        // $div.append($h5)
+        // let $img = $('<img>').attr('src',filteredArray[i].image).attr('alt',"project image").attr('title',`${filteredArray[i].description} example`).addClass('project_img')
+        // $div.append($img)
+        // let $h6 = $('<h6>').html(filteredArray[i].title).addClass('project_h6')
+        // $div.append($h6)
+    
+    return
 }
 
+let jQuery = []
+let Flexbox_Grid = []
+let HTML_CSS = []
+let other = []
+
+function app(projects){    
+    for (i=0; i<projects.length; i++){
+        if (projects[i].category === "jQuery"){
+            jQuery.push(projects[i]) 
+        }
+        else if (projects[i].category === "Flexbox_Grid"){
+            Flexbox_Grid.push(projects[i])
+        }
+        else if (projects[i].category === "HTML_CSS"){
+            HTML_CSS.push(projects[i])
+        }
+        else {
+            other.push(projects[i])
+        }        
+    }
+    return loadCategory(jQuery)
+}
+
+const $li_flexbox = $('.li_flexbox')
+$li_flexbox.on('click', () => {
+    console.log('hi')
+    $('.project_parent').css("background-color","rgba(194,198,78,0.36)")
+    $('h6').css("background-color","rgba(194,198,78,0.36)")
+    clearCategory()
+    return loadCategory(Flexbox_Grid)
+})
+// {icon: "far fa-clock fa-2x", title: "Wedding Day Timeline", description:"The who, what, when and where of your wedding day in one timeline."}
+// ]
+// const $ul = $('<ul>')
+// const $nav = $('nav')
+// $nav.append($ul)
+
+// function htmlStructure(){
+//     for(i=0; i<$array.length; i++){
+//         let $li = $('<li>').addClass('ItemContainer')
+//         $ul.append($li)
+//         let $a = $('<a>').attr("href","#")
+//         $li.append($a)
+//         let $div_ImageContainer = $('<div>').addClass('ImageContainer')
+//         $a.append($div_ImageContainer)
+//         let $i = $('<i>').addClass($array[i].icon)
+//         $div_ImageContainer.append($i)
+//         let $div_ItemContentContainer = $('<div>').addClass('ItemContentContainer')
+//         $a.append($div_ItemContentContainer)
+//         let $h4 = $('<h4>').html($array[i].title) //can also use .text instead of .html//
+//         $div_ItemContentContainer.append($h4)
+//         ;
+//     }
+// } 
+// htmlStructure()
