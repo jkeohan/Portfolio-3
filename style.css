@@ -5,7 +5,7 @@
     background-color: black;
     color: white;
     font-family: 'Sen', sans-serif;
-    
+    min-width: 320;
 }
 
 header, ul, footer{
@@ -71,7 +71,7 @@ p{
    
 }
 .project_wrapper {
-    background-color: rgba(150,192,190,1);
+    background-color: rgba(80,150,146,1);
     display: flex;
 }
 
@@ -83,6 +83,7 @@ p{
 .project_nav {
     background-color:inherit;
     grid-area: project_nav;
+    margin-right: 2px;
 }
 .project_nav ul{
     display: flex;
@@ -96,7 +97,7 @@ p{
     align-items: center;
 }
 .li_jQuery {
-    background-color: rgba(150,192,190,1);
+    background-color: rgba(80,150,146,1);
     padding: 0;
 }
 .a_jQuery{
@@ -123,7 +124,7 @@ p{
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    background-color: rgba(150,192,190,1);
+    background-color: rgba(80,150,146,1);
     padding-top: 5%;
 }
 .project {
@@ -133,10 +134,11 @@ p{
     background-color:inherit;
 }
 .project_img{
-    height: 225px;
-    width: 225px;
+    height: 224px;
+    width: 224px;
     padding: 0;
-    border: 2px solid white;
+    overflow: auto;
+    border: 1px solid white;
 }
 .project_h6{
     font-size: 20px;

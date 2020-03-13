@@ -96,8 +96,8 @@ $('.li_react').on('click', () => {
 })
 $('.li_jQuery').on('click', () => {
     $project_parent.empty()
-    $project_parent.css("background-color","rgba(150,192,190,1)")
-    $('.project_wrapper').css("background-color"," rgba(150,192,190,1)")
+    $project_parent.css("background-color","rgba(80,150,146,1)")
+    $('.project_wrapper').css("background-color"," rgba(80,150,146,1)")
     loadCategory(jQuery)
     $h6.css("background-color","inherit")
 })
