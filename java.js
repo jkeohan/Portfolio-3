@@ -1,3 +1,12 @@
+$('#hamburger').click(function() {
+    $('.top_nav ul').css("flex-direction","column").css("align-items","flex-end")
+    
+    $('.top_nav ul li').toggle("fast","linear")
+    // $('.top_nav ul li').css('display',"block")
+
+    
+})
+
 //Data Source -- GoogleSheet
 
 let source = "https://spreadsheets.google.com/feeds/list/1wVjdMce-oO0pND1evxCbDKfE0wYQf-CfBov_3DmnMuQ/od6/public/values?alt=json";
@@ -6,9 +15,7 @@ let source = "https://spreadsheets.google.com/feeds/list/1wVjdMce-oO0pND1evxCbDK
 fetch(source)
   .then(response => response.json())
   .then(data => {
-      
       let projects = data.feed.entry.map(project =>{
-      
         return {
           title: project.gsx$title.$t,
           description: project.gsx$description.$t,
@@ -18,45 +25,13 @@ fetch(source)
           recent: project.gsx$recent.$t
         }
   })
-      console.log('projects',projects)
       app(projects)
 })
-// Flexbox_Grid
-// HTML_CSS
-// jQuery
-const $project_parent = $('section.project_parent')
-function loadCategory(filteredArray){
-   
-    for (i=0; i<filteredArray.length; i++){
-        let $div = $('<div>').addClass('project')
-        $project_parent.append($div)
-        // let $h5 = $('<h5>').html(filteredArray[i].description).addClass('project_h5')
-        // $div.append($h5)
-        let $img = $('<img>').attr('src',filteredArray[i].image).attr('alt',"project image").attr('title',`${filteredArray[i].description} example`).addClass('project_img')
-        $div.append($img)
-        let $h6 = $('<h6>').html(filteredArray[i].title).addClass('project_h6')
-        $div.append($h6)
-    }
-    return
-}
-function clearCategory(){
-   
-    
-        
-        
-        // let $h5 = $('<h5>').html(filteredArray[i].description).addClass('project_h5')
-        // $div.append($h5)
-        // let $img = $('<img>').attr('src',filteredArray[i].image).attr('alt',"project image").attr('title',`${filteredArray[i].description} example`).addClass('project_img')
-        // $div.append($img)
-        // let $h6 = $('<h6>').html(filteredArray[i].title).addClass('project_h6')
-        // $div.append($h6)
-    
-    return
-}
 
 let jQuery = []
 let Flexbox_Grid = []
 let HTML_CSS = []
+let React = []
 let other = []
 
 function app(projects){    
@@ -74,17 +49,59 @@ function app(projects){
             other.push(projects[i])
         }        
     }
+    
     return loadCategory(jQuery)
 }
 
-const $li_flexbox = $('.li_flexbox')
-$li_flexbox.on('click', () => {
-    console.log('hi')
-    $('.project_parent').css("background-color","rgba(194,198,78,0.36)")
-    $('h6').css("background-color","rgba(194,198,78,0.36)")
-    clearCategory()
-    return loadCategory(Flexbox_Grid)
+const $project_parent = $('section.project_parent')
+
+function loadCategory(filteredArray){
+    for (i=0; i<filteredArray.length; i++){
+        let $div = $('<div>').addClass('project')
+        $project_parent.append($div)
+        // let $h5 = $('<h5>').html(filteredArray[i].description).addClass('project_h5')
+        // $div.append($h5)
+        let $img = $('<img>').attr('src',filteredArray[i].image).attr('alt',"project image").attr('title',`${filteredArray[i].description} example`).addClass('project_img')
+        $div.append($img)
+        let $h6 = $('<h6>').html(filteredArray[i].title).addClass('project_h6')
+        $div.append($h6)
+    }
+    return
+}
+
+
+
+$('.li_flexbox').on('click', () => {
+    $project_parent.empty()
+    $project_parent.css("background-color","rgba(194,198,78,0.36)")
+    loadCategory(Flexbox_Grid)
+    $h6.css("background-color","rgba(194,198,78,0.36)")
 })
+$('.li_html').on('click', () => {
+    $project_parent.empty()
+    $project_parent.css("background-color","rgba(198,78,78,0.36)")
+    loadCategory(HTML_CSS)
+    $h6.css("background-color","rgba(198,78,78,0.36)")
+})
+$('.li_react').on('click', () => {
+    $project_parent.empty()
+    $project_parent.css("background-color","rgba(78,130,198,0.36)")
+    let $div = $('<div>').addClass('project')
+    $project_parent.append($div)
+    $div.css("height","150px").css("width","150px")
+    let $h6 = $('<h6>').html(other[0].title).addClass('project_h6')
+        $div.append($h6)
+    $h6.css("background-color","rgba(78,130,198,0.36)")
+})
+$('.li_jQuery').on('click', () => {
+    $project_parent.empty()
+    $project_parent.css("background-color","rgba(150,192,190,0.37)")
+    loadCategory(jQuery)
+    $h6.css("background-color","rgba(150,192,190,0.37)")
+})
+
+
+
 // {icon: "far fa-clock fa-2x", title: "Wedding Day Timeline", description:"The who, what, when and where of your wedding day in one timeline."}
 // ]
 // const $ul = $('<ul>')

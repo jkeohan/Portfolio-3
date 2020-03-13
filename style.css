@@ -5,6 +5,7 @@
     background: black;
     color: white;
 }
+
 header, ul, footer{
     display: flex;
     align-items: center;
@@ -13,7 +14,7 @@ header, ul, footer{
 header, footer{
     justify-content: flex-end;
     background-color: black;
-    padding: 1.0% 5%;
+    padding: 8.0% 5%;
     
     /* width: 100%; */
 }
@@ -25,8 +26,8 @@ header, footer{
     padding-top: 2px;
     /* width: 100%; */
 }
-i{
-    font-size: 1.1rem;
+.logo i, .top_nav i{
+    font-size: calc(16px + 6.5vw)
     
 }
 nav{
@@ -40,7 +41,7 @@ li, a{
    list-style-type: none;
    text-decoration: none;
    color: white;
-   font-size: .7rem;
+   font-size: 3vh;
    transition: all 0.3s ease 0s;
 }
 a:hover{
@@ -57,7 +58,9 @@ p{
     text-align: left;
     flex-basis: 100%
 }
-
+.top_nav ul li {
+    display: none;
+}
 .hero{
     height: auto;
     max-width: 100%;
@@ -67,6 +70,7 @@ p{
 }
 .hero_image{
     background: black;
+   
 }
 /* .project_nav ul {
     display: grid;
@@ -88,11 +92,13 @@ p{
 
 .aside{
     grid-area: aside;
+    
 }
 .aside_nav ul {
     grid-area: aside_nav;
     display: flex;
     flex-direction: column;
+    /* position: fixed; */
     /* display: grid;
     grid-gap: 20px;
     padding: 0;
@@ -121,6 +127,12 @@ p{
 .li_flexbox, .a_flexbox{
     background-color:rgba(194,198,78,0.36);
 }
+.li_html, .a_html{
+    background-color:rgba(198,78,78,0.36);
+}
+.li_react, .a_react{
+    background-color:rgba(78,130,198,0.36);
+}
 .project_nav ul li {
     border-radius: 5px;
 }
@@ -140,15 +152,15 @@ p{
 .project {
     text-align: center;
     margin: 10px 0 0 10px;
-    background-color:rgba(150,192,190,0.37);
+    background-color:inherit;
 }
 .project_img{
     height: 115px;
     width: 115px;
     padding: 0;
 }
-h6{
-    background-color:rgba(150,192,190,0.37);
+.project_h6{
+    background-color:inherit;
 }
 
 /* ABOUT ME */
@@ -209,6 +221,12 @@ input[type=text], select, textarea {
 }
 
 @media(min-width: 768px){
+    .top_nav ul li {
+        display: flex;
+    }
+    #hamburger {
+        display: none;
+    }
     i{
         font-size: 1.7rem;
     }
@@ -327,3 +345,8 @@ input[type=text], select, textarea {
     }
 }
 
+/* Min-width: 320px (smaller phone viewpoints)
+Min-width: 480px (small devices and most phones)
+Min-width: 768px (most tablets)
+Min-width: 992px (smaller desktop viewpoints)
+Min-width: 1200px (large devices and wide screens) */

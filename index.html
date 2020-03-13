@@ -12,17 +12,17 @@
     crossorigin="anonymous"></script>
 </head>
 <header>
-    <div class="logo">
-        <a href="#">
-           <i class="fab fa-grav"></i>
-        </a>       
+    <div id="logo_href" class="logo">
+        <a href="#logo_href"><i class="fab fa-grav"></i></a>       
     </div>
+    
     <nav class="top_nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+        
+        <ul><i id="hamburger" class="fas fa-bars"></i>
+            <li><a href="#logo_href">Home</a></li>
+            <li><a href="#project_href">Projects</a></li>
+            <li><a href="#about_href">About</a></li>
+            <li><a href="#contact_href">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -33,7 +33,7 @@
         <img class="hero" 
         src="https://res.cloudinary.com/de2i4dwok/image/upload/v1583536372/Project%201/821011872_780x439_q0hxxi.jpg" alt="Telluride">
     </section>
-    <section>
+    <section id="project_href">
         <nav class="project_nav">
             <ul>
                 <li class="li_jQuery"><a class="a_jQuery" href="#">jQuery</a></li>
@@ -50,19 +50,19 @@
     <section class="container aside">
         <nav class="aside_nav">
             <ul class="aside_ul">
-                <li><a href="#"><i class="fas fa-home"></i></a> </li>
-                <li><a href="#"><i class="fas fa-project-diagram"></i></a> </li>
-                <li><a href="#"><i class="far fa-user-circle"></i></a> </li>
-                <li><a href="#"><i class="far fa-envelope"></i></a> </li>
+                <li><a href="#logo_href"><i class="fas fa-home"></i></a> </li>
+                <li><a href="#project_href"><i class="fas fa-project-diagram"></i></a> </li>
+                <li><a href="#about_href"><i class="far fa-user-circle"></i></a> </li>
+                <li><a href="#contact_href"><i class="far fa-envelope"></i></a> </li>
 
             </ul>
         </nav>
     </section>
-    <section class = "container about_me">
+    <section id="about_href" class = "container about_me">
         <h3 class="about_me_h3">About Me</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, voluptate? Consequatur distinctio ut adipisci aperiam hic excepturi qui voluptatibus, pariatur voluptatum labore debitis architecto at veniam nisi quod. Quaerat, perspiciatis!</p>
     </section>
-    <section class="container contact">
+    <section id="contact_href" class="container contact">
         <h3 class=contact_h3>Contact Me</h3>
         <form action="action_page.php">
 
@@ -91,10 +91,10 @@
     </div>
     <nav class="footer_topline bottom_nav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#logo_href">Home</a></li>
+            <li><a href="#project_href">Projects</a></li>
+            <li><a href="#about_href">About</a></li>
+            <li><a href="#contact_href">Contact</a></li>
         </ul>
     </nav>
     <p class="footer_bottomline">&copy; 2020</p>
