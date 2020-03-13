@@ -30,8 +30,8 @@ Drawing of Mobile & Tablet: https://res.cloudinary.com/de2i4dwok/image/upload/v1
 | Implement basic CSS Design | In Progress | 120 |		
 | Create Contact Form	 | Complete | 60 |
 | Create About Me	 | In Progress | 60 |		
-| Implement Project Navigation with Jquery filter |  |  |		
-| Create Hide Header |  |  |		
+| Implement Project Navigation with Jquery filter | Complete | 90 |		
+| Create Hamburger Header | In Progress  | 150 |		
 | Create Hide Footer	 |  |  |	
 | Create page pop	 |  |  |		
 | Full page zoom & opacity to project cards	 |  |  |		
@@ -55,11 +55,11 @@ Drawing of Mobile & Tablet: https://res.cloudinary.com/de2i4dwok/image/upload/v1
 | Create Contact Form	| H |	1 |  |  |	
 | Create About Me	| H |	1 |  |  |	
 | Proj Nav with jQuery Filter	| H |	3 |  |  |	
-| Hide Header	| H |	1 |  |  |	
+| Hamburger	| H |	1 | 2.5 | 2.5 |	
 | Hide Footer	| M |	1 |  |  |	
 | Scroll page pop	| M |	2 |  |  |		
 | Project Card Animation	| M |	2 |  |  |		
-| Side-bar navigation	| M |	2 |  |  |		
+| Side-bar navigation	| M |	2 | 40 | 40 |		
 | Hero Image animation | L |	2 |  |  |	
 | GIF Animation	| L |	6 |  |  |	
 | Finalize Git Hub Docs	| H |	1 |  |  |	
