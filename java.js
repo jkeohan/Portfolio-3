@@ -3,8 +3,6 @@ $('#hamburger').click(function() {
     
     $('.top_nav ul li').toggle("fast","linear")
     // $('.top_nav ul li').css('display',"block")
-
-    
 })
 
 //Data Source -- GoogleSheet
@@ -73,19 +71,19 @@ function loadCategory(filteredArray){
 
 $('.li_flexbox').on('click', () => {
     $project_parent.empty()
-    $project_parent.css("background-color","rgba(194,198,78,0.36)")
+    $project_parent.css("background-color","rgba(194,198,78,1)")
     loadCategory(Flexbox_Grid)
-    $h6.css("background-color","rgba(194,198,78,0.36)")
+    $h6.css("background-color","inherit")
 })
 $('.li_html').on('click', () => {
     $project_parent.empty()
-    $project_parent.css("background-color","rgba(198,78,78,0.36)")
+    $project_parent.css("background-color","rgba(198,78,78,1)")
     loadCategory(HTML_CSS)
     $h6.css("background-color","rgba(198,78,78,0.36)")
 })
 $('.li_react').on('click', () => {
     $project_parent.empty()
-    $project_parent.css("background-color","rgba(78,130,198,0.36)")
+    $project_parent.css("background-color","rgba(78,130,198,1)")
     let $div = $('<div>').addClass('project')
     $project_parent.append($div)
     $div.css("height","150px").css("width","150px")
@@ -95,9 +93,9 @@ $('.li_react').on('click', () => {
 })
 $('.li_jQuery').on('click', () => {
     $project_parent.empty()
-    $project_parent.css("background-color","rgba(150,192,190,0.37)")
+    $('.project_wrapper').css("background-color"," rgba(150,192,190,1)")
     loadCategory(jQuery)
-    $h6.css("background-color","rgba(150,192,190,0.37)")
+    $h6.css("background-color","inherit")
 })
 
 

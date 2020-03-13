@@ -21,17 +21,18 @@ Drawing of Mobile & Tablet: https://res.cloudinary.com/de2i4dwok/image/upload/v1
 
 |Deliverable	| Status	| Min.Spent |
 | --- | :---: |  :---: | 
-| Research ideas & GIF fun	| Complete 	| 30 |
-| Wireframes / Priority Matrix / Timeline	| Complete	| 90 |
-| HTML built	| Complete | 30 |
-| Compile List of Projects	| Complete | 45 |
-| Implement Grid and Flexbox to Structure	 | In Progress | 145 |	
-| Implement Tablet & Desktop Versions	 | In Progress | 140 |		
-| Implement basic CSS Design | In Progress | 120 |		
-| Create Contact Form	 | Complete | 60 |
-| Create About Me	 | In Progress | 60 |		
-| Implement Project Navigation with Jquery filter | Complete | 90 |		
-| Create Hamburger Header | In Progress  | 150 |		
+| Friday, Mar 6 | Research ideas & GIF fun	| Complete 	| 30 |
+| Sat, Mar 7 | Wireframes / Priority Matrix / Timeline	| Complete	| 90 |
+| Sun, Mar 8 | HTML built	| Complete | 30 |
+| Mon, Mar 9 | Compile List of Projects	| Complete | 45 |
+| Mon, Mar 9 | Implement Grid and Flexbox to Structure	 | In Progress | 145 |	
+| Mon, Mar 9 | Implement Tablet & Desktop Versions	 | In Progress | 140 |		
+| Tues, Mar 10 | Implement basic CSS Design | In Progress | 120 |		
+| Tues, Mar 10 | Create Contact Form	 | Complete | 60 |
+| Wed, Mar 11 | Create About Me	 | In Progress | 60 |		
+| Wed, Mar 11 | Implement Project Navigation with Jquery filter | Complete | 90 |	
+| Thurs, Mar 12 | Create Hamburger Header | In Progress  | 150 |		
+| Fri, Mar 13 | Link Contact to Google |  |
 | Create Hide Footer	 |  |  |	
 | Create page pop	 |  |  |		
 | Full page zoom & opacity to project cards	 |  |  |		

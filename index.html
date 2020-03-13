@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gracie Everitt Engineer</title>
-    <link rel="stylesheet" href = "style.css" type ="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://kit.fontawesome.com/1ec028bfe5.js" crossorigin="anonymous"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <header>
     <div id="logo_href" class="logo">
-        <a href="#logo_href"><i class="fab fa-grav"></i></a>       
+        <a href="#logo_href"><i class="fab fa-grav"></i></a>
     </div>
-    
+
     <nav class="top_nav">
-        
+
         <ul><i id="hamburger" class="fas fa-bars"></i>
             <li><a href="#logo_href">Home</a></li>
             <li><a href="#project_href">Projects</a></li>
@@ -26,81 +25,90 @@
         </ul>
     </nav>
 </header>
+
 <body>
-   
+
     <section class="hero_image">
-        
-        <img class="hero" 
-        src="https://res.cloudinary.com/de2i4dwok/image/upload/v1583536372/Project%201/821011872_780x439_q0hxxi.jpg" alt="Telluride">
+
+        <img class="hero"
+            src="https://res.cloudinary.com/de2i4dwok/image/upload/v1583536372/Project%201/821011872_780x439_q0hxxi.jpg"
+            alt="Telluride">
     </section>
-    <section id="project_href">
-        <nav class="project_nav">
-            <ul>
-                <li class="li_jQuery"><a class="a_jQuery" href="#">jQuery</a></li>
-                <li class="li_flexbox"><a class="a_flexbox" href="#">Flexbox & Grid</a></li>
-                <li class ="li_html"><a class="a_html" href="#">HTML & CSS</a></li>
-                <li class="li_react"><a class="a_react" href="#">React</a></li>
-            </ul>
-        </nav>
-    </section>
+    <div class="project_wrapper">
+        <section id="project_href">
+            <nav class="project_nav">
+                <ul>
+                    <li class="li_jQuery"><a class="a_jQuery" href="#">jQuery</a></li>
+                    <li class="li_flexbox"><a class="a_flexbox" href="#">Flexbox & Grid</a></li>
+                    <li class="li_html"><a class="a_html" href="#">HTML & CSS</a></li>
+                    <li class="li_react"><a class="a_react" href="#">React</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="project_parent">
+
+        </section>
+    </div>
     <div class="wrapper">
-    <section class="project_parent">
-        
-    </section>
-    <section class="container aside">
-        <nav class="aside_nav">
-            <ul class="aside_ul">
-                <li><a href="#logo_href"><i class="fas fa-home"></i></a> </li>
-                <li><a href="#project_href"><i class="fas fa-project-diagram"></i></a> </li>
-                <li><a href="#about_href"><i class="far fa-user-circle"></i></a> </li>
-                <li><a href="#contact_href"><i class="far fa-envelope"></i></a> </li>
+        <section class="container aside">
+            <nav class="aside_nav">
+                <ul class="aside_ul">
+                    <li><a href="#logo_href"><i class="fas fa-home"></i></a> </li>
+                    <li><a href="#project_href"><i class="fas fa-project-diagram"></i></a> </li>
+                    <li><a href="#about_href"><i class="far fa-user-circle"></i></a> </li>
+                    <li><a href="#contact_href"><i class="far fa-envelope"></i></a> </li>
 
+                </ul>
+            </nav>
+        </section>
+
+        <section id="about_href" class="container about_me">
+            <h3 class="about_me_h3">About Me</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, voluptate? Consequatur distinctio ut
+                adipisci aperiam hic excepturi qui voluptatibus, pariatur voluptatum labore debitis architecto at veniam
+                nisi quod. Quaerat, perspiciatis!</p>
+        </section>
+        <section id="contact_href" class="container contact">
+            <h3 class=contact_h3>Contact Me</h3>
+            <form action="action_page.php">
+
+                <!-- <label for="name">Name</label> -->
+                <input class="test" type="text" id="name" name="name" placeholder="Your name..">
+
+                <!-- <label for="email">Email</label> -->
+                <input class="test" type="text" id="email" name="email" placeholder="Your email..">
+
+                <!-- <label for="phone">Phone</label> -->
+                <input class="test" type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+                <!-- <label for="message">Message</label> -->
+                <textarea id="message" name="message" placeholder="Your message.."></textarea>
+
+                <input type="submit" id="submit" value="Submit">
+
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="footer_topline logo">
+            <a href="#">
+                <i class="fab fa-grav"></i>
+            </a>
+        </div>
+        <nav class="footer_topline bottom_nav">
+            <ul>
+                <li><a href="#logo_href">Home</a></li>
+                <li><a href="#project_href">Projects</a></li>
+                <li><a href="#about_href">About</a></li>
+                <li><a href="#contact_href">Contact</a></li>
             </ul>
         </nav>
-    </section>
-    <section id="about_href" class = "container about_me">
-        <h3 class="about_me_h3">About Me</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, voluptate? Consequatur distinctio ut adipisci aperiam hic excepturi qui voluptatibus, pariatur voluptatum labore debitis architecto at veniam nisi quod. Quaerat, perspiciatis!</p>
-    </section>
-    <section id="contact_href" class="container contact">
-        <h3 class=contact_h3>Contact Me</h3>
-        <form action="action_page.php">
+        <p class="footer_bottomline">&copy; 2020</p>
+    </footer>
 
-            <!-- <label for="name">Name</label> -->
-            <input class="test" type="text" id="name" name="name" placeholder="Your name..">
-        
-            <!-- <label for="email">Email</label> -->
-            <input class="test" type="text" id="email" name="email" placeholder="Your email..">
-        
-            <!-- <label for="phone">Phone</label> -->
-            <input class="test" type="text" id="phone" name="phone" placeholder="Your phone number..">
+    <script src="java.js"></script>
 
-            <!-- <label for="message">Message</label> -->
-            <textarea id="message" name="message" placeholder="Your message.."></textarea>
-        
-            <input type="submit" id="submit" value="Submit">
-        
-          </form>
-    </section>
-    </div>
-<footer>
-    <div class="footer_topline logo">
-        <a href="#">
-           <i class="fab fa-grav"></i>
-        </a>       
-    </div>
-    <nav class="footer_topline bottom_nav">
-        <ul>
-            <li><a href="#logo_href">Home</a></li>
-            <li><a href="#project_href">Projects</a></li>
-            <li><a href="#about_href">About</a></li>
-            <li><a href="#contact_href">Contact</a></li>
-        </ul>
-    </nav>
-    <p class="footer_bottomline">&copy; 2020</p>
-</footer>
-
-    <script src = "java.js"></script>
-    
 </body>
+
 </html>
