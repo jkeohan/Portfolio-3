@@ -164,7 +164,7 @@ p{
     justify-content: center;
 }
 .aside_nav {
-    margin-right: 5px;
+    padding-right: 5%;
 }
 .aside_nav ul {
     grid-area: aside_nav;
@@ -196,7 +196,7 @@ p{
 /* CONTACT FORM */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
-    padding: 6px; /* Some padding */ 
+    padding: 10px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -230,12 +230,26 @@ input[type=text], select, textarea {
     margin: 10% 0;
   }
 textarea {
-      height:50px;
+    padding: 40px 10px;
   }
 .contact_h3{
     padding: 3px 0 0 5px;
 }
 
+/* MOBILE RESPONSIVE */
+@media(min-width: 375px){
+    .aside_nav {
+        margin-right: 15px;
+    }
+}
+@media(min-width: 425px){
+    .project_nav ul li{
+        padding-right: 30px;
+    }
+    .project_nav ul li a {
+        padding-left: 10px;
+    }
+}
 @media(min-width: 768px){
     .top_nav ul li {
         display: flex;
@@ -243,24 +257,41 @@ textarea {
     #hamburger {
         display: none;
     }
-    i{
-        font-size: 1.7rem;
+    .logo i, .top_nav i{
+        font-size: calc(16px + 5.5vw)
     }
-    li, a {
-        font-size: 1.0rem;
+    .bottom_nav {
+        margin-right: 40px;
+    }
+    li, a, .bottom_nav li a {
+        font-size: 20px;
      }
-     .contact,.about_me{
+    .project_parent {
+        padding-top: 3%;
+    }
+    .project {
+        padding-bottom: 3%;
+        margin: 0;
+        padding-right: 15px;
+    }
+    .project_nav {
+        padding-right: 10px;
+    }
+    .project img {
+        height: 280px;
+        width: 280px;
+    }
+    .contact,.about_me{
         margin-left: 30px;
+        margin-top: 5%;
     }
     .about_me{
         height: 300px;
+        margin-bottom: 5%;
     }
     h3{
         font-size: 2rem;
         padding-bottom: 10px;
-    }
-    p{
-        font-size: 1rem;
     }
      .contact{
          margin-top: 50px;
@@ -274,33 +305,33 @@ textarea {
         display:grid;
         grid-gap: 10px;
         grid-template-areas:
-        'test message';
+        'form_text message';
      }
     #name, #email, #phone {
-        height: 30px;
+        height: 43px;
     }
-    .test{
-        grid-area: test;
+    .form_text{
+        grid-area: form_text;
         
         /* display: flex;
         flex-direction: column; */
      }
      #message{
          grid-area: message;
-         height: 104px;
+         height: 150px;
      }
      #phone{
          float: bottom;
-         margin-top: 80px;
+         margin-top: 112px;
      }
      #email{
-         margin-top: 43px;
+         margin-top: 59px;
      }
 
      #submit{
-        width: 90px;
-
-        margin-top: -5px;
+        width: 120px;
+        font-size: 20px;
+        margin-top: -3px;
      }
 }
 @media(min-width: 1024px){
