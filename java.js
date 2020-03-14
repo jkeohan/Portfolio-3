@@ -93,6 +93,10 @@ $('.li_react').on('click', () => {
     let $h6 = $('<h6>').html(other[0].title).addClass('project_h6')
         $div.append($h6)
     $h6.css("background-color","inherit")
+    $(window).resize(function(){
+        if ($('header').width() === "768px") {
+            $('.project_nav').css("max-width","175px")}
+    })
 })
 $('.li_jQuery').on('click', () => {
     $project_parent.empty()
