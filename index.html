@@ -75,7 +75,7 @@
         </section>
         <section id="contact_href" class="container contact">
             <h3 class=contact_h3>Contact Me</h3>
-            <form action="action_page.php">
+            <form onsubmit="return false;">
 
                 <!-- <label for="name">Name</label> -->
                 <input class="form_text" type="text" id="name" name="name" placeholder="Your name..">
@@ -89,16 +89,20 @@
                 <!-- <label for="message">Message</label> -->
                 <textarea id="message" name="message" placeholder="Your message.."></textarea>
 
-                <input type="submit" id="submit" value="Submit">
+                <input target="_self" type="submit" id="submit" value="Submit">
 
             </form>
+            <div id="message"></div>
         </section>
     </div>
     <footer>
         <div class="footer_topline logo">
-            <a href="#">
+            <a href="#logo_href">
                 <i class="fab fa-grav"></i>
             </a>
+            <a target="_blank" href="https://www.facebook.com/gracie.everitt"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/gracie-everitt-56a490/"><i
+                    class="fab fa-linkedin"></i></a>
         </div>
         <nav class="footer_topline bottom_nav">
             <ul>
