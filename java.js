@@ -29,6 +29,7 @@ let jQuery = []
 let Flexbox_Grid = []
 let HTML_CSS = []
 let React = []
+let other = []
 
 function app(projects) {
     for (i = 0; i < projects.length; i++) {
