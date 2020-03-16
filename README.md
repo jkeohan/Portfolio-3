@@ -5,7 +5,7 @@ https://gracieeveritt.github.io/Portfolio/
 https://youtu.be/0qAZwYf4UIc
 
 ## Project Schedule
-GitHub: https://github.com/GracieEveritt/Portfolio
+GitHub: https://github.com/GracieEveritt/Portfolio/projects/1
 
 ## Project Description
 Online resume that provides visuals of my current experience with web development.
@@ -59,18 +59,20 @@ Drawing of Mobile & Tablet: https://res.cloudinary.com/de2i4dwok/image/upload/v1
 | GIF Animation	| L |	6 |  |  |	
 | Finalize Video & Git Hub Docs	| H |	1 | 2 | 2 |	
 |				
-|TOTAL |	| 30	| 40 |	40 |   
+|TOTAL |	| Estimated 30 hrs for MVP	| 40 hrs invested |	40 hrs spent |   
 
 ## Additional Libraries
 *https://code.jquery.com/jquery-3.4.1.min.js    
 *https://thenounproject.com/  
 *https://kit.fontawesome.com/1ec028bfe5.js  
-Form Builder: https://www.w3schools.com/howto/howto_css_contact_form.asp  
-https://www.wiliam.com.au/wiliam-blog/jquery-and-css-media-queries  
+*Form Builder: https://www.w3schools.com/howto/howto_css_contact_form.asp  
+*https://www.wiliam.com.au/wiliam-blog/jquery-and-css-media-queries  
 
 ## Code Snippet
 
 https://res.cloudinary.com/de2i4dwok/image/upload/v1584299254/Project%201/Screen_Shot_2020-03-15_at_2.04.08_PM_eojgih.png
 
 ## Issues and Resolutions
+*Google Sheets - I initially implemented someone else's code. It took a while to format the form to what I wanted. I also didn't understand all of the attributes. I also had difficutly with jQuery. I eventually figured it all out. The video I chose to watch on how to integrate the Google API was more complicated and interferend with my current company's organizational files. So I decided to back down and figured out how to "fake" the front-end so that it appeared to work.   
 
+*Styling within the grid was challenging. I ended up having to create separate wrappers so that each would react differently when I implemented responsiveness. 
