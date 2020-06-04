@@ -58,7 +58,6 @@ Drawing of Mobile & Tablet: https://res.cloudinary.com/de2i4dwok/image/upload/v1
 | Hero Image animation | L |	2 |  |  |	
 | GIF Animation	| L |	6 |  |  |	
 | Finalize Video & Git Hub Docs	| H |	1 | 2 | 2 |	
-|				
 |TOTAL |	| Estimated 30 hrs for MVP	| 40 hrs invested |	40 hrs spent |   
 
 ## Additional Libraries
